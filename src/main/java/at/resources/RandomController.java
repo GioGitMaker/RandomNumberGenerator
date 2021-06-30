@@ -12,9 +12,11 @@ public class RandomController {
 
     public int randomNumber(){
         Random number = new Random();
-        int range = 1000;
-        int coincidence = number.nextInt(range);
-        return coincidence;
+        int rangeUp = 600;
+        int rangeLow = 500;
+        int diff = rangeUp - rangeLow;
+        int coincidence = number.nextInt(diff + 1);
+        return coincidence+=rangeLow;
     }
 
     @GET
