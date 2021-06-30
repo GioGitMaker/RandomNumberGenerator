@@ -7,7 +7,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.Random;
 
-@Path("/generateNumber")
+@Path("/api")
 public class RandomController {
 
     public int randomNumber(){
