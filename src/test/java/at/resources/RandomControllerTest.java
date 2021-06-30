@@ -11,7 +11,7 @@ public class RandomControllerTest {
 
         int checking = numberCheck.getRandomNumber();
 
-        Assertions.assertNotEquals(true, checking >= 1000);
+        Assertions.assertNotEquals(true, checking >= 600);
     }
 
     @Test
@@ -20,6 +20,6 @@ public class RandomControllerTest {
 
         int checking = numberCheck.randomNumber();
 
-        Assertions.assertEquals(true, checking<= 1000);
+        Assertions.assertEquals(true, checking<= 600);
     }
 }
